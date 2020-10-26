@@ -17,7 +17,7 @@ module.exports = merge(common, {
           chunks: "all",
         },
         common: {
-          test: /[\\/]src[\\/]components[\\/]/,
+          test: /[\\/]src[\\/]/,
           chunks: "all",
           minSize: 0,
         },
@@ -33,16 +33,6 @@ module.exports = merge(common, {
             loader: MiniCssExtractPlugin.loader,
           },
           "css-loader",
-        ],
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          "css-loader",
-          "sass-loader",
         ],
       },
       {

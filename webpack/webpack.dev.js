@@ -12,10 +12,6 @@ module.exports = merge(common, {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
         test: /\.jpg|png|ttf|svg$/,
         use: {
           loader: "file-loader",
@@ -31,6 +27,6 @@ module.exports = merge(common, {
     contentBase: path.resolve(__dirname, "../dist"),
     hot: true,
     open: true,
-    port: 3000,
+    port: 3001,
   },
 });
