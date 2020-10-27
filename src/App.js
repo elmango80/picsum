@@ -4,7 +4,7 @@ import { isAuthenticated } from "./services/authService";
 
 import Loading from "./components/ui/loading";
 
-const Layout = React.lazy(() => import("./views/shared/Layout"));
+const Layout = React.lazy(() => import("./views/layout/Layout"));
 const Login = React.lazy(() => import("./views/login"));
 
 const App = () => {

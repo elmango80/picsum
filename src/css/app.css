@@ -1,0 +1,41 @@
+.app {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.app--wrapper {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 100vh;
+    transition: margin 0.3s;
+}
+
+.app--header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 3rem;
+    z-index: 1029;
+}
+
+.app--body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.app--main {
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
+    min-width: 0;
+    padding-top: 2rem;
+}

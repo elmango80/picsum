@@ -10,13 +10,21 @@
     margin: 0px;
 }
 
-#root {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
     font-family: "OpenSans";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: #3c4b64;
+    background-color: #ececec;
 }
 
 .login-wrapper {
